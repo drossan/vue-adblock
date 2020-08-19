@@ -1,14 +1,14 @@
 
-# vue-adblock
-[![GitHub open issues](https://img.shields.io/github/issues/Daniel Rosselló S./vue-adblock.svg?maxAge=2592000)](https://github.com/Daniel Rosselló S./vue-adblock/issues)
-[![Npm version](https://img.shields.io/npm/v/vue-adblock.svg?maxAge=2592000)](https://www.npmjs.com/package/vue-adblock)
+# vue-adblock-alert
+[![GitHub open issues](https://img.shields.io/github/issues/Daniel Rosselló S./vue-adblock-alert.svg?maxAge=2592000)](https://github.com/Daniel Rosselló S./vue-adblock-alert/issues)
+[![Npm version](https://img.shields.io/npm/v/vue-adblock-alert.svg?maxAge=2592000)](https://www.npmjs.com/package/vue-adblock-alert)
 
 ## Usage
 ```HTML
 <VueAdblock :text="hello"></VueAdblock>
 ```
 ```javascript
-import { VueAdblock } from 'vue-adblock'
+import { VueAdblock } from 'vue-adblock-alert'
 
 export default {
   components: {
@@ -20,7 +20,7 @@ export default {
 
 ## Installation
 ```
-npm install vue-adblock
+npm install vue-adblock-alert
 ```
 
 ## Project setup

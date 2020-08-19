@@ -3,7 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <sandbox>
 
-      <VueAdblock :msg="'awdawd'"/>
+      <VueAdblockAlert :msg="'awdawd'"/>
 
     </sandbox>
   </div>
@@ -13,13 +13,13 @@
 import { Sandbox } from 'component-fixture'
 import "font-awesome/css/font-awesome.css";
 import "component-fixture/dist/ComponentFixture.css";
-import VueAdblock from '@/components/VueAdblock.vue'
+import VueAdblockAlert from '@/components/VueAdblockAlert.vue'
 
 export default {
   name: 'App',
   components: {
     Sandbox,
-    VueAdblock
+    VueAdblockAlert
   }
 }
 </script>

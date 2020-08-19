@@ -1,16 +1,16 @@
 {
-  "name": "vue-adblock",
+  "name": "vue-adblock-alert",
   "version": "0.1.0",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve ./example/main.js --open",
-    "build": "vue-cli-service build --name vue-adblock --entry ./src/index.js --target lib",
+    "build": "vue-cli-service build --name vue-adblock-alert --entry ./src/index.js --target lib",
     "lint": "vue-cli-service lint",
     "doc:build": "npx vuedoc.md --section API --output ./README.md ./src/components/VueAdblock.vue",
     "prepublishOnly": "npm run lint && npm run build && npm run doc:build"
   },
-  "main": "dist/vue-adblock.umd.js",
-  "module": "dist/vue-adblock.common.min.js",
+  "main": "dist/vue-adblock-alert.umd.js",
+  "module": "dist/vue-adblock-alert.common.min.js",
   "files": [
     "dist/*.css",
     "dist/*.map",

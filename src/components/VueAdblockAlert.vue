@@ -14,7 +14,7 @@
 <script>
 
 export default {
-    name: 'VueAdblock',
+    name: 'VueAdblockAlert',
     props: {
         title: {
             type: String

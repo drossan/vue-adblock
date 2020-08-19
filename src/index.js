@@ -1,5 +1,5 @@
-import VueAdblock from './components/VueAdblock.vue';
+import VueAdblockAlert from './components/VueAdblockAlert.vue';
 
 export {
-    VueAdblock
+    VueAdblockAlert
 }
