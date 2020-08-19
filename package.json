@@ -1,12 +1,22 @@
 {
   "name": "vue-adblock",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "vue-cli-service serve ./example/main.js --open",
+    "build": "vue-cli-service build --name vue-adblock --entry ./src/index.js --target lib",
+    "lint": "vue-cli-service lint",
+    "doc:build": "npx vuedoc.md --section API --output ./README.md ./src/components/VueAdblock.vue",
+    "prepublishOnly": "npm run lint && npm run build && npm run doc:build"
   },
+  "main": "dist/vue-adblock.umd.js",
+  "module": "dist/vue-adblock.common.min.js",
+  "files": [
+    "dist/*.css",
+    "dist/*.map",
+    "dist/*.js",
+    "src/*"
+  ],
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
@@ -15,9 +25,12 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "@vuedoc/md": "^1.5.0",
     "babel-eslint": "^10.1.0",
+    "component-fixture": "^1.12.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "vue-cli-plugin-component": "^1.12.2",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -38,5 +51,9 @@
     "> 1%",
     "last 2 versions",
     "not dead"
+  ],
+  "keywords": [
+    "vue",
+    "component"
   ]
 }

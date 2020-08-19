@@ -1,17 +1,25 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <sandbox>
+
+      <VueAdblock :msg="'awdawd'"/>
+
+    </sandbox>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { Sandbox } from 'component-fixture'
+import "font-awesome/css/font-awesome.css";
+import "component-fixture/dist/ComponentFixture.css";
+import VueAdblock from '@/components/VueAdblock.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Sandbox,
+    VueAdblock
   }
 }
 </script>
